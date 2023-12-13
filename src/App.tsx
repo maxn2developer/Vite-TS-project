@@ -1,12 +1,15 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
+import AppMap from "./map/AppMap";
+import Header from "./pages/Header";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
+      <Header />
       <div>
         <a href="https://reactjs.org" target="_blank" rel="noreferrer">
           <img src={reactLogo} className="logo react" alt="React logo" />
@@ -33,6 +36,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <AppMap />
     </div>
   );
 }
